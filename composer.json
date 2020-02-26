@@ -1,0 +1,17 @@
+{
+    "autoload": {
+        "psr-4": {
+            "\\": "src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "His\\ServiceProvider"
+            ]
+        }
+    }
+}
