@@ -1,4 +1,6 @@
 {
+    "name": "lixueyuan/rongcloud-for-laravel",
+    "description": "基于融云服务端sdk封装成laravel5包",
     "autoload": {
         "psr-4": {
             "\\": "src"
