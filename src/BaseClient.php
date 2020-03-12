@@ -1,5 +1,5 @@
 <?php
-namespace his;
+namespace His;
 use GuzzleHttp\Client;
 
 class  BaseClient

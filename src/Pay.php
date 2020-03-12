@@ -1,6 +1,6 @@
 <?php
 
-namespace his;
+namespace His;
 
 class Pay extends BaseClient{
 
