@@ -3,7 +3,7 @@
 namespace His;
 class Isp {
     public function his(){
-        return new His('services.his.url');
+        return new His(config('services.his.url'));
     }
 
     public function pay(){

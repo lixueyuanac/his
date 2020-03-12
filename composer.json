@@ -1,9 +1,15 @@
 {
     "name": "lixueyuan/his",
     "description": "his系统对接包",
+    "license": "MIT",
+    "authors": [{
+        "name":"lixueyuan",
+        "email":"654530249@qq.com"
+    }
+    ],
     "autoload": {
         "psr-4": {
-            "\\": "src"
+            "His\\": "src"
         }
     },
     "require": {

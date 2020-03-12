@@ -13,8 +13,11 @@ class Pay extends BaseClient{
     //微信/支付宝付款码支付
     public function pay(array $params, $format = 'json') {
         $url = $this->url.'/hisRequestPayCenter/pay';
-        $requestParams = array(
-            [
+        $requestParams = array([
+            'headers' => [
+                'Content-Type' => 'text/xml; charset=UTF8',
+            ],
+            'body'=>[
                 'req.unionPayKey' => $params['unionPayKey'],// 复合支付秘钥联合支付（带轮转规则，待测试时提供）
                 'req.payCode' => $params['payCode'],//  支付码 设备读取用户的条码或二维码，不传会只进行订单状态查询。
                 'req.branchCode' => $params['branchCode'],// 院区码
@@ -36,6 +39,7 @@ class Pay extends BaseClient{
                 'req.medicareAmout' => $params['medicareAmout'], // 统筹记账金额
                 'req.totalAmount' => $params['totalAmount'], // 总金额
             ]
+        ]
         );
         return $this->requestUrl($url, $requestParams, $format);
     }
