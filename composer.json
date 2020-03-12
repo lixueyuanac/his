@@ -1,6 +1,6 @@
 {
     "name": "lixueyuan/his",
-    "description": "基于融云服务端sdk封装成laravel5包",
+    "description": "his系统对接包",
     "autoload": {
         "psr-4": {
             "\\": "src"
