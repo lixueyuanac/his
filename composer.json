@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "His\\": "src"
+            "Hospital\\": "src/Hospital"
         }
     },
     "require": {
@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "His\\ServiceProvider"
+                "Hospital\\ServiceProvider"
             ]
         }
     }

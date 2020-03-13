@@ -1,5 +1,5 @@
 <?php
-namespace His;
+namespace Hospital;
 use GuzzleHttp\Client;
 
 class  BaseClient

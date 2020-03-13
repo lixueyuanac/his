@@ -1,8 +1,7 @@
 <?php
-namespace His;
+namespace Hospital;
 // his系统提供的接口
-use GuzzleHttp\Client;
-use his\BaseClient;
+
 class His extends BaseClient{
     protected $format;
     public function  __construct(string $format = 'json')

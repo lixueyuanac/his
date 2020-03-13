@@ -1,7 +1,7 @@
 <?php
 
-namespace His;
-class Isp {
+namespace Hospital;
+class Factory {
     public function his(){
         return new His(config('services.his.url'));
     }
