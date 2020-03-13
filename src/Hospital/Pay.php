@@ -7,6 +7,7 @@ class Pay extends BaseClient{
     public $url;
     public function __construct($url)
     {
+        parent::__construct();
         $this->url = $url;
     }
 

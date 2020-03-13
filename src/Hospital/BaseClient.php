@@ -7,7 +7,7 @@ class  BaseClient
     protected $guzzleOptions = [];
     public $url = '';
 
-    public function __construct()
+    public function __construct($url = '')
     {
         $this->url = 'xxxxxxx';
     }

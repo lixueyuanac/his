@@ -1,12 +1,13 @@
 <?php
 
 namespace Hospital;
+
 class Factory {
-    public function his(){
-        return new His(config('services.his.url'));
+    public function his($url = ''){
+        return new His($url);
     }
 
-    public function pay(){
-        return new Pay(config('services.pay.url'));
+    public function pay($url = ''){
+        return new Pay($url);
     }
 }

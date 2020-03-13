@@ -6,6 +6,7 @@ class His extends BaseClient{
     protected $format;
     public function  __construct(string $format = 'json')
     {
+        parent::__construct();
         $this->format = $format;
     }
 
@@ -143,5 +144,18 @@ class His extends BaseClient{
         ]));
         $response = $this->getHttpClient()->post($url,$requestParams);
         return 'json' === $this->format ? \json_decode($response, true) : $response;
+    }
+
+    public function test(){
+        $url = 'hospital.test/api/hospital/submerchant/1';
+        $requestParams = array(
+            'headers'=>[
+                'Authorization'=>'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vaG9zcGl0YWwudGVzdC9hcGkvbG9naW4iLCJpYXQiOjE1ODMxMzc4MDcsImV4cCI6MTU5MDkxMzgwNywibmJmIjoxNTgzMTM3ODA3LCJqdGkiOiI2UWxSMnlwSVJPQUYxbHdmIiwic3ViIjoxLCJwcnYiOiJiMTUwYmM0NTEzYjk1OTRmMTljNDFlNWIyMDY1YWM5NDA4ZjNhNThlIiwiZ3VhcmRfdHlwZSI6Imhvc3BpdGFsIn0.mmPE1MnnozovELKrUv-2E5no4QUDNf8i6liiAKrY5dY',
+                'Content-Type' =>'application/x-www-form-urlencoded',
+            ]);
+
+
+        $response = $this->getHttpClient()->get($url,$requestParams)->getBody()->getContents();
+        return $response;
     }
 }
