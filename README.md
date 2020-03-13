@@ -1,6 +1,6 @@
-<h1 align="center">  </h1>
+<h1 align="center"> 医院提供的接口</h1>
 
-<p align="center"> .</p>
+<p align="center"> 主要是对接医院的his系统和医保支付</p>
 
 
 ## Installing
